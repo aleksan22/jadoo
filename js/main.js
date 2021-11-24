@@ -73,3 +73,23 @@ let mySlider = new Swiper(swiper, {
         slideShadows: false
       },
 })
+
+document.querySelector('.header__link');
+let popup = document.querySelector('.popup')
+let content = document.querySelector('.popup__content');
+let popupClose = document.querySelector('.popup__content-btn')
+document.querySelector('popup--active');
+document.querySelector('active');
+
+document.querySelector('.header__link').addEventListener('click', () => {
+    popup.classList.add('popup--active')
+    content.classList.add('active')
+})
+popupClose.addEventListener('click', () => {
+    popup.classList.remove('popup--active')
+    content.classList.remove('active')
+})
+popup.addEventListener('click', () => {
+    popup.classList.remove('popup--active')
+    content.classList.remove('active')
+})
